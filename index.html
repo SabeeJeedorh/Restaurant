@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yumit!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Yum <span>it!</span></div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Contact </a>
+        </div>
+
+        <div class="my-btn">
+          <button class="bars" onclick="showMobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="mobile-menu">
+          <button class="close-btn" onclick="hideMobileMenu()">
+            <i class="fa-solid fa-times"></i>
+          </button>
+          <ul class="mobile-navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="register">
+          <a href="#">Reservation</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="txt">
+      <div class="craft">
+        <span
+          >Crafted with Love,
+          <h1>Served with Joy!</h1></span>
+        <h1>Enjoy Fantastic</h1>
+        <p>
+          At Yum It!, we serve delicious, freshly prepared meals designed to
+          delight your taste buds. From classic favorites to bold new flavors,
+          every dish is crafted with care. Come hungry, leave happy!
+        </p>
+        <button onclick="scrollToSection('register')">Order here</button>
+      </div>
+    </section>
+    <section class="manage">
+      <span>Best app ever for food delivering</span>
+      <h1>Place your Order</h1>
+      <h1>Anytime! Anywhere!</h1>
+      <div class="pricing-card">
+        <ul>
+          <li>Higher Reach</li>
+          <li>Satisfaction</li>
+          <li>Mouth Watering</li>
+        </ul>
+        <div class="icon">
+          <i class="fa-brands fa-whatsapp">+2347031023432</i>
+          <i class="fa-brands fa-facebook">Sabee'a Jeedorh</i>
+          <i class="fa-brands fa-instagram">Sabee'a Jeedorh</i>
+          <i class="fa-solid fa-phone">+2347031023432</i>
+          <i class="fa-solid fa-envelope">sabeeajeedorh@gmail.com</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="food">
+      <h1>Gallery</h1>
+
+      <div class="container">
+        <div class="box">
+          <img src="./images/fruits.jpg" alt="" />
+          <p>Fruit Salad</p>
+          <p>$40</p>
+          <button>Order</button>
+        </div>
+        <div class="box">
+          <img src="./images/raspberry.jpg" alt="" />
+          <p>Raspberry Drink</p>
+          <p>$25</p>
+          <button>Order</button>
+        </div>
+        <div class="box">
+          <img src="./images/rice.jpg" alt="" class="rice" />
+          <p>Fried Rice and Plantain</p>
+          <p>$50</p>
+          <button>Order</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box">
+          <img src="./images/amala.jpg" alt="" />
+          <p>Amala and Ewedu Soup</p>
+          <p>$20</p>
+          <button>Order</button>
+        </div>
+        <div class="box">
+          <img src="./images/rice2.jpg" alt="" />
+          <p>Jollof and Rice and Chicken</p>
+          <p>$56</p>
+          <button>Order</button>
+        </div>
+        <div class="box">
+          <img src="./images/yam.jpg" alt="Yam" />
+          <p>Yam and Egg Sauce</p>
+          <p>$32</p>
+          <button>Order</button>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum
+        veritatis ex fugiat impedit vel quasi deserunt quam reprehenderit vero
+        similique voluptatibus amet ab quos necessitatibus voluptas, animi
+        temporibus optio.
+      </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea
+          id="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Yum it!. All rights reserved.</p>
+    </footer>
+    <script>
+      //   function showMobileMenu() {
+      // let mobileMenu = document.querySelectorAll(".mobile-menu")[0];
+
+      // if (mobileMenu.style.display === "none") {
+      //   document.querySelectorAll(".mobile-menu")[0].style.display = "block";
+      // } else {
+      //   document.querySelectorAll(".mobile-menu")[0].style.display = "none";
+      // }
+      // }
+
+      function showMobileMenu() {
+        let mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.style.display = "block"; // Show the menu
+      }
+
+      function hideMobileMenu() {
+        let mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.style.display = "none"; // Hide the menu
+      }
+    </script>
+  </body>
+</html>
