@@ -292,16 +292,16 @@
     display: flex;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1398px) {
     .logo {
       transform: translate(-4rem);
     }
     .menu,
     .register {
-      display: none;
+      display: block;
     }
     .my-btn {
-      display: block;
+      display: none;
     }
     ul {
       list-style: none;
@@ -312,7 +312,7 @@
       display: block;
       border: none;
       width: 3rem;
-      transform: translate(5rem, 0);
+      transform: translate(2rem, 0);
       padding: 10px 5px;
       border-radius: 0;
       cursor: pointer;
@@ -339,6 +339,23 @@
       padding: 10px 15px;
       border-bottom: 1px solid #fff;
     }
+    .mobile-menu a:hover{
+      color: #f39c12;
+      transition: 0.5s;
+    }
+    .reserve{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 16px;
+      width: 8rem;
+      border-bottom: none;
+      height: 3rem;
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+    
     .close-btn {
       background: none;
       border: none;
@@ -364,10 +381,11 @@
       margin-left: 0;
     }
     .box {
-      padding: 2%;
       transition: transform 3s ease;
     }
-  
+  .food{
+    padding-bottom: 3rem;
+  }
     img {
       height: 10rem;
     }
@@ -388,5 +406,17 @@
       max-width: 500px;
       padding: 1rem 2rem 0 2rem;
     }
+    
   }
   
+      @media (max-width: 768px) {
+   
+    .menu,
+    .register {
+      display: none;
+    }
+    .my-btn {
+      display: block;
+    }
+   
+    }
